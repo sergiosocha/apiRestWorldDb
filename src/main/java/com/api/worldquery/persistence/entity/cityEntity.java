@@ -31,8 +31,7 @@ public class cityEntity implements Serializable {
 
     @ManyToOne
     @JoinColumn(name ="CountryCode", referencedColumnName = "Code",  insertable = false, updatable = false )
-    @JsonIgnore
-    private countryEntity Code;
+    private countryEntity country;
 
 }
 

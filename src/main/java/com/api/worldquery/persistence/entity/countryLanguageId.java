@@ -14,8 +14,8 @@ import java.util.Objects;
 @NoArgsConstructor
 @AllArgsConstructor
 public class countryLanguageId implements Serializable {
-    private String CountryCode;
-    private String Language;
+    private String countryCode;
+    private String language;
 
 
     @Override
@@ -23,12 +23,12 @@ public class countryLanguageId implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         countryLanguageId that = (countryLanguageId) o;
-        return Objects.equals(CountryCode, that.CountryCode) && Objects.equals(Language, that.Language);
+        return Objects.equals(countryCode, that.countryCode) && Objects.equals(language, that.language);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(CountryCode, Language);
+        return Objects.hash(countryCode, language);
     }
 }
 

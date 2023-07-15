@@ -61,12 +61,12 @@ public class countryEntity implements Serializable {
     private String code2;
 
 
-    @OneToMany(mappedBy = "CountryCode", fetch = FetchType.EAGER)
-    private List<cityEntity> city;
+    @OneToMany(mappedBy = "country", fetch = FetchType.EAGER)
+    private List<cityEntity> cities;
 
 
 
-    @OneToMany(mappedBy = "CountryCode", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "countryCode", fetch = FetchType.EAGER)
     private List<countryLanguageEntity> language;
 
 }
